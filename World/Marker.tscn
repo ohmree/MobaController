@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="CylinderMesh" id=2]
+material = SubResource( 1 )
+top_radius = 0.25
+bottom_radius = 0.25
+height = 0.075
+
+[node name="Marker" type="MeshInstance"]
+mesh = SubResource( 2 )
+material/0 = null
